@@ -1,0 +1,75 @@
+.finish{
+	position: relative;
+	.information{
+		text-align: left;
+		width: 54.35%;
+		margin-left: 7.97%;
+		margin-top: 126px;
+		.left, .right{
+			display: inline-block;
+			font-size: 16px;
+			color: $text_finish;
+  			div{
+  				white-space: nowrap;
+  				.name{
+  					float: left;
+  					margin-right: 5px;
+  				}
+  				span{
+				    text-overflow: ellipsis;
+				    display: block;
+				    overflow: hidden;
+  				}
+  			}
+			h3{
+				color: $blue;
+				margin-bottom: 12px;
+				font-size: 16px;
+			}
+			.total{
+				margin-top: 12px;
+				color: $total_finish;
+				font-weight: bold;
+			}
+		}
+		.left{
+			float: left;
+			width: 46.33%;
+			border-right: 1px solid $text_finish;
+			div span{
+				padding-right: 2%;
+			}
+		}
+		.right{
+			margin-left: 10.81%;
+			width: 42.56%;
+		}
+		.btn_little{
+			text-align: center;
+			padding: 0;
+			font-size: 14px;
+			line-height: 43px;
+			margin: 52px 0 73px;
+		}
+		.btn_demo{
+			width: 38.42%;
+		}
+		.btn_install{
+			float: right;
+			width: 56.37%;
+		}
+	}
+	.img{
+		float: right;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 33.34%;
+		height: 62.67%;
+		max-width: image-width("../images/mobile.jpg");
+		max-height: image-height("../images/mobile.jpg");
+		background: url("../images/mobile.jpg") no-repeat;
+		background-size: contain;
+		background-position: bottom;
+	}
+}

@@ -1,0 +1,47 @@
+.questions{
+	h2{
+		font-weight: normal;
+		color: $blue;
+		font-size: 25px;
+		line-height: 30px;
+		margin: 52px 0 30px;
+	}
+	input{
+		width: 112px;
+		height: 50px;
+		line-height: 50px;
+		font-size: 35px;
+		text-align: center;
+		color: $input;
+		border: 1px solid $input_border;	
+	}	
+
+	.swiper-paginator{
+		margin: 46px 0 50px;
+		span{
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background: $paginator_gray;
+			display: inline-block;
+			margin: 0 8px;
+			&.swiper-next{
+				background: $paginator_red;
+			}
+			&.swiper-pagination-bullet-active{
+				position: relative;
+				&:before{
+					content: "";
+					position: absolute;
+					top: -3px;
+					left: -3px;
+					display: inline-block;
+					width: 12px;
+					height: 12px;
+					border-radius: 50%;
+					border: 2px solid $paginator_red;
+				}
+			}
+		}
+	}
+}

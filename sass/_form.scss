@@ -1,0 +1,82 @@
+form{
+	text-align: left;
+	width: 59.53%;
+	margin: 0 auto;
+	color: $paginator_gray;
+	line-height: 27px;
+	font-size: 15px;
+	.left, .right{
+		display: inline-block;
+		width: 49.557%;
+		input, select{
+			display: block;
+			width: 100%;
+			padding: 0 12px;
+			box-sizing: border-box;
+			color: $paginator_gray;
+			line-height: 33px;
+			margin-bottom: 10px;
+			font-size: 18px;
+			border: 1px solid $paginator_gray;
+		}
+		select{
+			position: relative;
+			height: 35px;
+			@include border-radius(0);
+			@include appearance(none);
+			background: white;			
+			z-index: 1;
+			padding-right: 20px;
+		}
+		.select{
+			position: relative;
+			&:before{
+				z-index: 5;
+				position: absolute;
+				top: 50%;
+				margin-top: -9px;
+				right: 9px;
+				content: '';
+				display: inline-block;
+				border: 3px solid transparent;
+				border-bottom: 5px solid $paginator_gray;
+			}
+			&:after{
+				z-index: 5;
+				position: absolute;
+				top: 50%;
+				margin-top: 2px;
+				right: 9px;
+				content: '';
+				display: inline-block;
+				border: 3px solid transparent;
+				border-top: 5px solid $paginator_gray;
+			}
+		}
+	}
+	.left{
+		float: left;
+	}
+	.right{	
+		float: right;	
+	}
+	.radio{
+		line-height: 20px;
+		clear: both;
+		.text{
+			padding-top: 15px;
+			margin-bottom: 10px;
+		}
+		input{
+			margin-right: 11px;
+		}
+		label{
+			cursor: pointer;
+			margin-right: 26px;
+		}
+	}
+}
+
+.btn_form{
+	margin: 48px 0 57px;
+}

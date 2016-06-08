@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+</head>
+<body>
+  <div class="main">
+    <div class="work">
+      
+      <div class="swiper-main">
+        <ul class="swiper-wrapper">
+          <li class="start page swiper-slide">
+            <h1>
+              See how quick and reliable mobile device diagnosis
+              can help you reduce NTF returns.
+            </h1>           
+            <span class="btn btn_big">
+              Start calculating NOW
+            </span> 
+          </li><!-- start -->
+          
+          <li class="questions page swiper-slide">
+            <h1>
+              See how quick and reliable mobile device diagnosis
+              can help you reduce NTF returns.
+            </h1>
+            <h2>
+              How many stores do you have?
+            </h2>
+            <input class="stores validate number" type="number"></input>
+            <br>
+            <span class="btn btn_little">Next</span>
+            <div class="swiper-paginator"></div>
+          </li><!-- Question 1 -->
+
+          <li class="questions page swiper-slide">
+            <h1>
+              See how quick and reliable mobile device diagnosis
+              can help you reduce NTF returns.
+            </h1>
+            <h2>
+              How many devices do you diagnose monthly?
+            </h2>
+            <input class="dev_mon validate number" type="number"></input>
+            <br>
+            <span class="btn btn_little">Next</span>
+            <div class="swiper-paginator"></div>
+          </li><!-- Question 2 -->
+
+          <li class="questions page hihihi swiper-slide">
+            <h1>
+              See how quick and reliable mobile device diagnosis
+              can help you reduce NTF returns.
+            </h1>
+            <h2>
+              How many NTF returns do you get monthly?
+            </h2>
+            <input class="ntf_ret validate number" type="number"></input>
+            <br>
+            <span class="btn btn_little">Next</span>
+            <div class="swiper-paginator"></div>
+          </li><!-- Question 3 -->
+
+          <li class="questions page swiper-slide">
+            <h1>
+              See how quick and reliable mobile device diagnosis
+              can help you reduce NTF returns.
+            </h1>
+            <h2>
+              How much does each NTF returns cost you?
+            </h2>
+            <input class="ntf_cost validate number" type="number"></input>
+            <br>
+            <span class="btn btn_little">Next</span>
+            <div class="swiper-paginator"></div>
+          </li><!-- Question 4 -->
+
+          <li class="questions page swiper-slide">
+            <h1>
+              See how quick and reliable mobile device diagnosis
+              can help you reduce NTF returns.
+            </h1>
+            <h2>
+              How many data transfers do you perform monthly?
+            </h2>
+            <input class="data_mon validate number" type="number"></input>
+            <br>
+            <span class="btn btn_little">Next</span>
+            <div class="swiper-paginator"></div>
+          </li><!-- Question 5 -->
+
+          <li class="questions page swiper-slide">
+            <h1>
+              See how quick and reliable mobile device diagnosis
+              can help you reduce NTF returns.
+            </h1>
+            <h2>
+              How much does each data transfer cost you?
+            </h2>
+            <input class="data_cost validate number" type="number"></input>
+            <br>
+            <span class="btn btn_little btn_red">Calculate</span>
+            <div class="swiper-paginator"></div>
+          </li><!-- Question 6 -->
+
+          <li class="form page swiper-slide">
+            <h1 class="white">Can we get a few details first</h1>
+            <form>
+              <div class="name">Name *</div>             
+              <div class="left">
+                <input type="text" class="validate" name="first_name">
+                Company *
+                <input type="text" class="validate" name="company">
+                Phone *
+                <input type="text" class="validate" name="phone">
+              </div>
+
+              <div class="right">
+                <input type="text" name="last_name">
+                Email *
+                <input type="email" class="validate email" name="email">
+                Industry *
+                <div class="select">
+                  <select name="industry">
+                    <option value="1">Healthcare1</option>
+                    <option value="2">Healthcare2</option>
+                    <option value="3">Healthcare3</option>
+                    <option value="4">Healthcare4</option>
+                    <option value="5">Healthcare5</option>
+                    <option value="6">Healthcare6</option>
+                    <option value="7">Healthcare7</option>
+                    <option value="8">Healthcare8</option>
+                    <option value="9">Healthcare9</option>
+                    <option value="10">Healthcare10</option>
+                  </select>
+                </div>
+                
+              </div>
+
+              <div class="radio">
+                <div class="text">
+                  In what channel(s) do you need to implement a diagnostics solution?*
+                </div>
+                <input class="validate" type="radio" name="chanel" id="form_chanel1">
+                <label for="form_chanel1">Retail Stores</label>
+                <input class="validate" type="radio" name="chanel" id="form_chanel2">
+                <label for="form_chanel2">Repair Centers</label>
+                <input class="validate" type="radio" name="chanel" id="form_chanel3">
+                <label for="form_chanel3">Production Facility</label>
+              </div>
+
+            </form>
+            <span class="btn btn_little btn_form">Submit</span>
+          </li><!-- Form 6 -->
+
+          <li class="finish page swiper-slide">
+            <h1>
+              Your potential NTF savings
+              <div class="text">
+                How mach can SmartChk Enterprise?
+              </div>
+            </h1>
+            <div class="information">
+              <div class="left">
+                <h3>
+                  Monthly
+                </h3>
+                <div class="mons">
+                  <div class="name">NTFs: </div>
+                  <span>9,000</span>
+                </div>
+                <div class="mon_cost">
+                  <div class="name">NTF Cost:</div>                  
+                  <span>$450,000</span>
+                </div>
+                <div class="mon_saves">
+                  <div class="name">NTF Saves:</div>
+                  <span>7,200</span>
+                </div>
+                <div class="total mon_total">
+                  <div class="name">NTF Savings:</div>                  
+                  <span>$360,000</span>
+                </div>
+              </div>
+
+              <div class="right">
+                <h3>
+                  Annually
+                </h3>
+                <div class="anns">
+                  <div class="name">NTFs:</div> 
+                  <span>108,000</span>
+                </div>
+                <div class="ann_cost">
+                  <div class="name">NTF Cost:</div>                  
+                  <span>$5,400,000</span>
+                </div>
+                <div class="ann_saves">
+                  <div class="name">NTF Saves:</div>
+                  <span>86,400</span>
+                </div>
+                <div class="total ann_total">
+                  <div class="name">NTF Savings:</div>
+                  <span>$4,320,000</span>
+                </div>
+              </div>
+
+              <span class="btn_little btn_red btn_demo">
+                Request a DEMO
+              </span>
+              <div class="btn_little btn_red btn_install">
+                Instantly schedule a meeting
+              </div>
+            </div><!-- information -->
+            <div class="img"></div>
+          </li><!-- Finish -->
+          
+        </ul><!-- block -->
+      </div><!-- main -->
+
+    </div>
+  </div>
+
+
+  <script src="js/jquery-1.9.0.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/layout.js"></script>
+</body>
+</html>

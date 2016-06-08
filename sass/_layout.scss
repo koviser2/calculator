@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  position: relative;
+  height: 100%;
+}
+.main{
+  display: table;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  .work{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+  }
+}
+
+.swiper-main{
+  width: 100%;
+  max-width: 953px;
+  overflow: hidden;
+  margin: 0 auto;
+  ul{
+    li{
+      display: inline-block;
+      float: left;
+      text-align: center;
+      border: 1px solid $border;
+      @include box-sizing(border-box);
+      h1{
+        padding: 44px 7.55%;
+        width: 84.9%;
+        background: $gray;
+        color: $blue;
+        text-transform: uppercase;
+        font-size: 25px;
+        &.white{
+          background: white;
+        }
+        .text{
+          text-transform: none;
+          font-weight: normal;
+          font-size: 20px;
+          margin-top: 5px;
+        }
+      }
+      .btn_big{
+        @include hover();
+        display: inline-block;
+        margin: 173px 0 174px;
+        padding: 0 33px;
+        line-height: 60px;
+        color: white;
+        background: $blue;
+        text-transform: uppercase;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.bad-validation{
+  border: 2px solid $btn_red !important;
+}
+
+.text.bad-validation{
+  border: 0 !important;
+  color: $btn_red;
+}
+.btn_little{
+  @include hover();
+  color: white;
+  background: $blue;
+  font-size: 16px;
+  line-height: 50px;
+  padding: 0 72px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 79px;
+}
+.btn_red{
+  background: $btn_red;
+}

@@ -1,0 +1,7 @@
+@mixin hover(){
+	cursor: pointer;
+	@include transition($time);
+	&:hover{
+		opacity: 0.8;
+	}
+}
